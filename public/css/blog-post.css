@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+      color: orange;
+    }
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+    h1 {
+        font-size: 70px;
+        color: orange;
+    }
+    h2 {
+        color: #007A5C;
+        font-size: 30px;
+    }  
+    h5 {
+        color: #007A5C;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .title-gray {
+      color: #007A5C;
+    }
+    .title-description-gray {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.35;
+        color: #007A5C;
+    }
+    .stats-gray {
+        color: #000;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .title-green {
+        color: #fff;
+    }
+    .title-description-green {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.35;
+    }
+    .stats-green {
+        color: #000;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .post {
+        height:200px;
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .card-gray {
+      background-color: #fff;
+      border: 5px double #007A5C;
+      border-radius: 10px;
+      color: #000;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .card-green {
+      background-color: #007A5C;
+      color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    /* clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .website-name {
+      margin-top: 100px;
+    }
+    .website-name a {
+      text-decoration: none;
+      text-align: center;
+    }
+    .website-name a h1 {
+      font-size: 40px;
+    }
+    .website-name a h1 p {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 50px;
+    }
+    .website-slogan {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 50px;
+    } 
+    .card {
+      border: 1px solid #007A5C;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 30px;
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+    footer {
+      text-align: center;
+      background-color: none;
+      margin-top: 20px;
+      margin-left: 400px;
+    }
+    footer li {
+      margin-right: 50px;
+      list-style: none;
+      font-size: 20px;
+      float: left;
+      padding: 20px;
+    }
+    footer a {
+      font-weight: bolder;
+      letter-spacing: .05rem;
+      font-size: 1.5rem;
+      color: orange;
+      text-decoration: none;
+    }
+  
+  
+    @media screen and (max-width: 600px) {
+      .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
