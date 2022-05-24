@@ -19,7 +19,6 @@ body{
     grid-gap: 10px; 
     margin: 0px;
     padding: 0px;
-    border: 5px solid #00ff00; 
   }
 /* the hero image container */
   .hero-container {
@@ -29,7 +28,6 @@ body{
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    /* margin-bottom: 150px; */
   }
   .hero-container img {
     width: 100%;
@@ -85,8 +83,6 @@ body{
     padding: 15px;
   }
 
-
-
 /* all styling tags */
   h1{
       letter-spacing:2.5px;
@@ -97,8 +93,9 @@ body{
       font-weight: bold;
       text-transform: capitalize;
       letter-spacing: 1.5px;
-      color: red;
-      margin-top: 300px;
+      color: orange;
+      margin-top: 100px;
+      padding-left: 50px;
   }
   h3{
       color: orange;
@@ -132,11 +129,6 @@ body{
 
   }
 
-  /* .image-row1-with-3columns img {
-    width:"400";
-    height:"200"; 
-  } */
-
   span em {
 
   }
@@ -152,21 +144,24 @@ body{
 
 
 
-  /* all buttons */
-  
+  /* all buttons */  
   button {  
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
     color: #fff; 
-    /* font-style: none;  */
     background-color: #007A5C; 
     border-radius: 7px; 
     width: 50%; 
     padding: 15px; 
     font-size: 1.7rem; 
-    /* float:right;  */
-    /* margin-right: 100px;  */
     margin-top: 25px;
-    /* margin-bottom: 100px; */
-    text-decoration: underline;
+    text-decoration: underline; 
+
+    margin-left: 50px;
+    text-align: center;
   }
   button a {
     color: #fff;
@@ -193,7 +188,6 @@ body{
     flex-wrap: wrap;
     align-items: center; 
     justify-content:space-around;
-    border: 1px double tan;
     margin-bottom: 20px;
   }
 
@@ -213,26 +207,19 @@ body{
   .text-box{
     width:400px;
     height:70px;
-    /* border:1px solid black;     */
-    /* margin-bottom:100px; */
   }
   .text-box p{
       font-size:16px;
-      /* margin-bottom: 100px; */
   }
   #one{
     order: 1;
-
   }
   #two{
     order:2;
-
   }
   #thr{
     order:3;
-
   }
-
 
 
   .header-button-row1-with-3columns {
@@ -241,7 +228,6 @@ body{
     flex-wrap: wrap;
     align-items: center; 
     justify-content:space-around;
-
   }
 
   .image-box{
@@ -252,31 +238,20 @@ body{
   .text-box{
     width:400px;
     height:70px;
-    /* border:1px solid black;     */
     margin-bottom:100px;
   }
   .text-box p{
       font-size:16px;
-      /* text-align:center; */
-      /* margin:0px; */
-      /* padding:5px; */
   }
   #one{
     order: 1;
-  /*   flex: 2 1 300px; */
   }
   #two{
     order:2;
-  /*   flex: 2 1 300px; */
   }
   #thr{
     order:3;
-  /*   flex: 2 1 300px; */
   }
-
-
-
-
 
 
   /* row 2 styling */
@@ -290,63 +265,46 @@ body{
     flex-wrap: wrap;
     align-items: center; 
     justify-content:space-around;
-    border: 1px double tan;
   }
   #section2 .image-box{
     width:400px;
     height:300px;
-    /* border:1px solid orange; */
   }
   #section2 .text-box{
     width:400px;
     height:60px;
-    /* border:1px solid orange;     */
     margin-bottom:100px;
   }
   #section2 .text-box p{
-      font-size:18px;
-      text-align:center;
-      margin:0px;
-      padding:5px;
+    font-size:18px;
+    text-align:center;
+    margin:0px;
+    padding:5px;
   }
   #section2 #one{
     order:1;
-  /*   flex: 2 1 300px; */
   }
   #section2 #two{
     order:2;
-  /*   flex: 2 1 300px; */
   }
   #section2 #thr{
     order:3;
-  /*   flex: 2 1 300px; */
   }
-  
 
-
-
-  /* row 2 styling */
-  /* #section2{
-      margin:0;
-      padding:0;
-  } */
   .header-button-row2-with-2columns {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center; 
     justify-content:space-around;
-    border: 1px double tan;
   }
   #section2 .image-box{
     width:400px;
     height:300px;
-    /* border:1px solid orange; */
   }
   #section2 .text-box{
     width:400px;
     height:60px;
-    /* border:1px solid orange;     */
     margin-bottom:100px;
   }
   #section2 .text-box p{
@@ -357,79 +315,41 @@ body{
   }
   #section2 #one{
     order:1;
-  /*   flex: 2 1 300px; */
   }
   #section2 #two{
     order:2;
-  /*   flex: 2 1 300px; */
   }
   #section2 #thr{
     order:3;
-  /*   flex: 2 1 300px; */
   }
-  
+ 
 
-
-
-
-
-
-
-
-  
-  /* row 3 reviews and testimonials */
-  .review-header {
+/* row 3 reviews and testimonials */
+  .review-header-row3-with-3columns {
     width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: flex-end;  */
+    justify-content:space-around;
+    margin-top: 50px;
+    
   }
-  .review-header h2 {
-    font-size: 22px;
+  .review-header-row3-with-3columns h2 {
+    color: #007A5C;
+    font-size: 52px;
     font-weight: 400;
+    text-align: right;
+  }
+  .review-header-row3-with-3columns p {
+    font-size:24px;
+    letter-spacing:3px;
+    /* width:100%; */
+    background-color:#007A5C;
+    color: #fff;
     text-align: left;
-  }
-  .review-row3-with-3columns {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; 
-    justify-content:space-around;
-    border: 1px double tan;
-
-    margin-top: -100px;
-    margin-bottom: 200px;
-  }
-  .review-row3-with-3columns p {
-    background-color: #007A5C;
-    width: 100%;
-    height: 100%;
-    color: red;
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 3px;
-  }
-
-
-  .review-row3-with-3columns {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; 
-    justify-content:space-around;
-    border: 1px double tan;
-    font-size: 24px;
-    width:70%;
-    height:30px;
-    margin:auto;
-    margin:20px;
-    text-align:center;
-  }
-
-
-
-
-
-
-
-
-
-
+    padding: 20px;
+}
+.review-header-row3-with-3columns .text-box {
+  margin-bottom: 500px;
+}
