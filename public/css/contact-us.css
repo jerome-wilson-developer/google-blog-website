@@ -51,6 +51,35 @@ body {
   font-size: 45px; 
 }
 
+h1 {
+  margin:50px; 
+  font-size:100px;
+  border:1px solid #292929;
+  padding:70px;
+  color: orange;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+h2 { 
+  margin-left:200px;
+  font-size:50px;
+  padding:10px;
+  color: #292929;
+  font-family:Arial, Helvetica, sans-serif;
+}
+h3 {
+  margin-left:200px;
+  font-size:50px;
+  padding:10px;color: #292929;font-family:Arial, Helvetica, sans-serif;
+}
+p {
+  line-height:1.2;
+  margin-bottom:50px;
+  color:orange;
+  margin-left: 100px;
+}
+
+
 #contact-section .container .title{ 
     position: relative;
     text-align: center;
