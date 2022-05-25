@@ -12,11 +12,7 @@
       text-align: center;
       background: white;
       color: orange;
-    }
-
-
-
-    
+    }    
 .navbar-links {
   width: 100%; 
   margin-top: -50px;
@@ -41,11 +37,7 @@
   text-decoration: none;
   font-size: 45px; 
 } 
-
-
-
-
-    .leftcolumn {
+  .leftcolumn {
       float: left;
       width: 75%;
     }
@@ -67,18 +59,21 @@
         font-size: 16px;
         line-height: 1.5;
     }
+    p {
+      font-size: 28px;
+    }
     .title-gray {
       color: #007A5C;
     }
     .title-description-gray {
         color: #fff;
-        font-size: 18px;
+        font-size: 28px;
         line-height: 1.35;
         color: #007A5C;
     }
     .stats-gray {
         color: #000;
-        font-size: 16px;
+        font-size: 26px;
         font-family: Arial, Helvetica, sans-serif;
     }
     .title-green {
@@ -86,12 +81,12 @@
     }
     .title-description-green {
         color: #fff;
-        font-size: 18px;
+        font-size: 28px;
         line-height: 1.35;
     }
     .stats-green {
         color: #000;
-        font-size: 16px;
+        font-size: 26px;
         font-family: Arial, Helvetica, sans-serif;
     }
     .post {

@@ -50,11 +50,11 @@ body{
     text-decoration: none;
   }
   .hero-container .centered button a p {
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 33px;
     color: #fff;
     font-style: normal;
-    letter-spacing: 8px;
+    letter-spacing: 8px;    
   }
   .bottom-left {
     position: absolute;
@@ -126,31 +126,11 @@ body{
       letter-spacing:1.5px;
   }
   a {
-
+    margin: 0px;
+    padding: 0px;
   }
-
-  span em {
-
-  }
-  span strong {
-
-  } 
-  span ital {
-
-  }
-  blockquote {
-
-  }
-
-
-
   /* all buttons */  
-  button {  
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-
+  button {
     color: #fff; 
     background-color: #007A5C; 
     border-radius: 7px; 
@@ -173,8 +153,6 @@ body{
     background-size: stretch;
     background-repeat: no-repeat;
   }   */
-
-
 
   /* row 1 styling */  
   .image-row1-with-3columns {
