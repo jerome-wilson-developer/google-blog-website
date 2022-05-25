@@ -4,88 +4,16 @@ This is my project #2 for my Google-Udacity-OneTen Scholarship. The scholarship 
 Netlify link to this Blog Website
 https://google-scholarship-blog-website.netlify.app/
 
+Thanks, Raunak for your help on what needs to be corrected. 5 specs require changes ... these are the locations of my changes ... 
 
+#1) ADD B,EM,U TO <P> TAG: Added at <nav class="social-media-links"> ... <p><b><em><u>Follow us on:</u></em></b></p> and also:  <article class="centered"><button><a href=""><p><b><em>Start NOW</em></b></p>.
 
-xxx  index.html hero-image = <strong><em>Start NOW</em></strong>
-    < class="centered">    
-            <button>
+#2 Add a Blockquote: I added a blockquote from "Steve Jobs" on the blog page. The blockquote is at the top of the sidebar.
 
+#3 Add an image caption: I added the image caption on the Contact Us page as the hero-image.
 
-underline tag is used in 
-   <p><underline>Follow us on:</underline></p>
-  <ul>
+#4 Use Grid at least twice: I used both times on the index.html page ...  .main-container {display: grid;width: 100%; and .social-media-links {display: grid; width: 100%;
 
+#5 Use flexbox at least twice: I used flexbox almost 10 times throughout this blog site.
 
-image caption
-
-
-
-CONTACT PG: move all css to stylesheet - add article tags to html - 
-
-
-
-Blockquote on the blog page from Steve Jobs at the Top of Sidebar
-
-
-
-grid #1 ... index.html =
-.main-container {
-    display: grid;
-    width: 100%; 
-    grid-gap: 10px; 
-
-grid #2) ... footer.css = 
-.social-media-links {
-    display: grid;
-    width: 100%; 
-    grid-gap: 10px; 
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid #007A5C;
-    width: fit-content;
-  }    #2) ...
-
-
-
-flex #8 contact.css = 
-    .navbar-links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-flex #1 ... style.css =
-.image-row1-with-3columns {
-    display:flex;
-    flex-direction: row;
-
-flex #2 ... style.css =
-    .header-button-row1-with-3columns {
-    display:flex;
-    flex-direction: row;
-
-   flex #3 ... style.css =
-    .image-row2-with-2columns {
-    display:flex;
-    flex-direction: row;
-
-    flex #4 style.css = 
-    .header-button-row2-with-2columns {
-    display:flex;
-    flex-direction: row;
-
-    flex #5 ... style.css = 
-    
-  flex #7 ... style.css review-header-row3-with-3columns {
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-
-
-
-
-
-
-
-
-
- 
+#6 Contact Us page: Remove CSS from HTML tags and add the styling to the stylesheet. All CSS has been removed from HTML.
