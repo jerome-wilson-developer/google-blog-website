@@ -162,11 +162,187 @@
       color: orange;
       text-decoration: none;
     }
-  
-  
-    @media screen and (max-width: 600px) {
-      .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
+   
+
+
+
+    /* SMARTPHONE SCREEN */
+    @media only screen and (max-width: 587px) {
+      body {
+        background-color: #000;
       }
+     
+      .leftcolumn {
+        float: left;
+        width: 100%;
+      }
+      .rightcolumn {
+        display: none; 
+      }
+
+      
+      .header {
+        margin: 0px;
+        padding: 0px;
+        font-size: 70px;
+        text-align: center; 
+        color: orange;
+      }  
+
+
+
+      .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      .navbar-links ul li a {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+        color: orange;
+        text-decoration: none;
+        font-size: 22px; 
+      }
+
+       
+.navbar-links {
+  margin: 0px;
+  padding: 0px;
+  width: 100%; 
+}
+.navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 50px;
+}
+.navbar-links ul li {
+  list-style: none;
+  padding: 20px;
+}
+.navbar-links ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold; */
+  color: orange;
+  text-decoration: none;
+  font-size: 25px; 
+} 
+
+
+      
+
+        
+      h1 {
+        font-size: 30px;
+        color: orange;
+      }
+
+
+
+      /* h2 {
+          color: orange;
+          font-size: 20px;
+      }  
+      h5 {
+          color: #007A5C;
+          font-size: 16px;
+          line-height: 1.5;
+      } */
+
+      
+      p {
+        color: #007A5C;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+
+ 
+
+
+
+
+        .card-gray {
+          background-color: #fff;
+          /* border: 1px solid #007A5C; */
+          /* border-radius: 5px;  */
+          padding: 10px;
+        }
+        .title-gray {
+          color: #007A5C;
+          font-size: 20px;
+          line-height: 1;
+          /* padding: 10px; */
+        }
+        .title-description-gray {
+          color: #007A5C;
+          font-size: 18px;
+          line-height: 1;
+          /* padding: 10px; */
+        }
+        .stats-gray {
+          color: #007A5C;
+          font-size: 15px;
+          line-height: 1;
+        }
+
+        .card-green {
+          background-color: #007A5C;
+          /* border: 1px solid #007A5C; */
+          /* border-radius: 5px;  */
+          padding: 10px;
+        }
+
+        .title-green {
+          color: #fff;
+          font-size: 20px;
+          line-height: 1;
+          /* padding: 10px; */
+        }
+
+        .title-description-greem {
+          color: #fff;
+          font-size: 18px;
+          line-height: 1;
+          /* padding: 10px; */
+        }
+
+        .stats-green {
+          color: #000;
+          font-size: 15px;
+          line-height: 1;
+        }   
+      
+      }
+
+    /* clear floats after the columns */
+    /* .row:after {
+      content: "";
+      display: table;
+      clear: both;
     }
+    .website-name {
+      margin-top: 100px;
+    }
+    .website-name a {
+      text-decoration: none;
+      text-align: center;
+    }
+    .website-name a h1 {
+      font-size: 40px;
+    }
+    .website-name a h1 p {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 50px;
+    }
+    .website-slogan {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 50px;
+    }
+    
+    
