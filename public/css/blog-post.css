@@ -1,21 +1,27 @@
 *{
     box-sizing: border-box;
-  }
-  body {
-      font-family: Arial;
-      padding: 20px;
-      background: #f1f1f1;
-    }
-    .header {
-      padding: 30px;
-      font-size: 40px;
-      text-align: center;
-      background: white;
-      color: orange;
-    }    
+}
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  color: orange;
+}
+.blockquote {
+  margin: 0px;
+  padding: 0px; 
+  color: #007A5C;
+  font-size: 22px;
+}
 .navbar-links {
   width: 100%; 
-  margin-top: -50px;
+  /* margin-top: -50px; */
   margin-bottom: 20px;
 }
 .navbar-links ul {
@@ -23,326 +29,349 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 50px;
+  /* padding: 50px; */
 }
 .navbar-links ul li {
   list-style: none;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .navbar-links ul li a {
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   color: orange;
   text-decoration: none;
-  font-size: 45px; 
+  font-size: 25px; 
 } 
-  .leftcolumn {
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+h1 {
+    font-size: 70px;
+    color: orange;
+}
+h2 {
+    color: #007A5C;
+    font-size: 30px;
+}  
+h5 {
+    color: #007A5C;
+    font-size: 16px;
+    line-height: 1.5;
+}
+p {
+  font-size: 28px;
+}
+img {
+  width: 50%;
+  height: 100%;
+}
+.title-gray {
+  color: #007A5C;
+}
+.title-description-gray {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.35;
+    color: #007A5C;
+}
+.stats-gray {
+    color: #000;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title-green {
+    color: #fff;
+}
+.title-description-green {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.35;
+}
+.stats-green {
+    color: #fff;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post {
+    height:200px;
+    width:100%;
+    margin-bottom: 50px;
+} 
+.card {
+  border: 1px solid #007A5C;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.card-gray {
+  background-color: #fff;
+  border: 5px double #007A5C;
+  border-radius: 10px;
+  color: #000;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card-green {
+  background-color: #007A5C;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.website-name {
+  margin-top: 100px;
+}
+.website-name a {
+  text-decoration: none;
+  text-align: center;
+}
+.website-name a h1 {
+  font-size: 40px;
+}
+.website-name a h1 p {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 50px;
+}
+.website-slogan {
+  font-size: 28px;
+  text-align: left;
+  margin-left: 50px;
+}
+footer {
+  text-align: center;
+  background-color: none;
+  margin-top: 20px;
+  margin-left: 400px;
+}
+footer li {
+  margin-right: 50px;
+  list-style: none;
+  font-size: 20px;
+  float: left;
+  padding: 20px;
+}
+footer a {
+  font-weight: bolder;
+  letter-spacing: .05rem;
+  font-size: 1.5rem;
+  color: orange;
+  text-decoration: none;
+}
+
+
+/* SMARTPHONE SCREEN */
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: #fff;
+    }
+    footer {
+      display: none;
+    }
+    .blockquote {
+      margin: 0px;
+      padding: 0px; 
+      color: #007A5C;
+      font-size: 22px;
+    }
+    .leftcolumn {
       float: left;
-      width: 75%;
+      width: 100%;
     }
     .rightcolumn {
-      float: left;
-      width: 25%;
-      padding-left: 20px;
+      display: none; 
     }
+    .header {
+      margin: 0px;
+      padding: 0px;
+      font-size: 70px;
+      text-align: center; 
+      color: orange;
+    }
+    .navbar-links ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    .navbar-links ul li a {
+      margin: 0px;
+      padding: 0px;
+      font-weight: bold;
+      color: orange;
+      text-decoration: none;
+      font-size: 22px; 
+    }        
     h1 {
-        font-size: 70px;
-        color: orange;
+      font-size: 30px;
+      color: orange;
     }
-    h2 {
-        color: #007A5C;
-        font-size: 30px;
-    }  
-    h5 {
-        color: #007A5C;
-        font-size: 16px;
-        line-height: 1.5;
-    }
+    /* h2 {
+      font-size: 55px;
+    } */
     p {
-      font-size: 28px;
-    }
-    .title-gray {
       color: #007A5C;
-    }
-    .title-description-gray {
-        color: #fff;
-        font-size: 28px;
-        line-height: 1.35;
-        color: #007A5C;
-    }
-    .stats-gray {
-        color: #000;
-        font-size: 26px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .title-green {
-        color: #fff;
-    }
-    .title-description-green {
-        color: #fff;
-        font-size: 28px;
-        line-height: 1.35;
-    }
-    .stats-green {
-        color: #000;
-        font-size: 26px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .post {
-        height:200px;
-        width:100%;
-        margin-bottom: 50px;
+      font-size: 22px;
+      line-height: 1;
+      color: #fff;
     }
     .card-gray {
       background-color: #fff;
-      border: 5px double #007A5C;
-      border-radius: 10px;
-      color: #000;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 10px;
+    }    
+    .card-gray p {
+      color: #007A5C;
+    }
+    .title-gray {
+      color: #007A5C;
+      font-size: 25px;
+      line-height: 1;
+    }
+    .title-description-gray {
+      color: #007A5C;
+      font-size: 22px;
+      line-height: 1;
+    }
+    .stats-gray {
+      color: #007A5C;
+      font-size: 18px;
+      line-height: 1.5;
     }
     .card-green {
       background-color: #007A5C;
+      padding: 10px;
+    }    
+    .card-green p {
       color: #fff;
-      padding: 20px;
-      margin-top: 20px;
     }
-    /* clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .title-green {
+      color: #fff;
+      font-size: 25px;
+      line-height: 1;
     }
-    .website-name {
-      margin-top: 100px;
+    .title-description-green {
+      color: #fff;
+      font-size: 22px;
+      line-height: 1;
     }
-    .website-name a {
-      text-decoration: none;
-      text-align: center;
-    }
-    .website-name a h1 {
-      font-size: 40px;
-    }
-    .website-name a h1 p {
+    .stats-green {
+      color: #fff;
       font-size: 18px;
-      text-align: left;
-      margin-left: 50px;
+      line-height: 1.5;
     }
-    .website-slogan {
-      font-size: 18px;
-      text-align: left;
-      margin-left: 50px;
-    } 
-    .card {
-      border: 1px solid #007A5C;
-      border-radius: 5px;
-      background-color: #fff;
-      padding: 30px;
-      margin-top: 70px;
-      margin-bottom: 50px;
+    .card-green .title-green .title-description-green .stats-green .post p {
+      color: #fff; 
     }
-    footer {
-      text-align: center;
-      background-color: none;
-      margin-top: 20px;
-      margin-left: 400px;
-    }
-    footer li {
-      margin-right: 50px;
-      list-style: none;
-      font-size: 20px;
-      float: left;
-      padding: 20px;
-    }
-    footer a {
-      font-weight: bolder;
-      letter-spacing: .05rem;
-      font-size: 1.5rem;
-      color: orange;
-      text-decoration: none;
-    }
-   
-
-
-
-    /* SMARTPHONE SCREEN */
-    @media only screen and (max-width: 587px) {
-      body {
-        background-color: #000;
-      }
-     
-      .leftcolumn {
-        float: left;
-        width: 100%;
-      }
-      .rightcolumn {
-        display: none; 
-      }
-
-      
-      .header {
-        margin: 0px;
-        padding: 0px;
-        font-size: 70px;
-        text-align: center; 
-        color: orange;
-      }  
-
-
-
-      .navbar-links ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-      }
-      .navbar-links ul li a {
-        margin: 0px;
-        padding: 0px;
-        font-weight: bold;
-        color: orange;
-        text-decoration: none;
-        font-size: 22px; 
-      }
-
-       
-.navbar-links {
-  margin: 0px;
-  padding: 0px;
-  width: 100%; 
 }
-.navbar-links ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 50px;
+
+
+/* TABLET SCREEN */
+@media only screen and (min-width: 801px) and (max-width: 1150px) {
+  body {
+    background-color: #000;
+    border: 3px solid #007A5C;
+  }
+  footer {
+    display: none;
+  }     
+  .blockquote {
+    margin: 0px;
+    padding: 0px; 
+    color: #fff;
+    font-size: 27px;
+  }
+  .leftcolumn {
+    float: left;
+    width: 100%;
+  }
+  .rightcolumn {
+    display: none; 
+  }
+  .header {
+    margin: 0px;
+    padding: 0px;
+    font-size: 70px;
+    text-align: center; 
+    color: orange;
+  }
+  .navbar-links {
+    background-color: #fff;
+  }
+  .navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navbar-links ul li a {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+    font-size: 33px; 
+  }        
+  h1 {
+    font-size: 50px;
+    color: orange;
+  }
+  p {
+    color: #007A5C;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .card-gray {
+    background-color: #fff;
+    /* padding: 10px; */
+  }
+  .title-gray {
+    color: #007A5C;
+    font-size: 30px;
+    line-height: 1;
+  }
+  .title-description-gray {
+    color: #007A5C;
+    font-size: 25px;
+    line-height: 1;
+  }
+  .stats-gray {
+    color: #007A5C;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .card-green {
+    background-color: #007A5C;
+    padding: 10px;
+  }
+  .card-green p {
+    color: #fff;
+  }
+  .title-green {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+  }
+  .title-description-greem {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+  }
+  .stats-green {
+    color: #000;
+    font-size: 20px;
+    line-height: 1;
+  }        
 }
-.navbar-links ul li {
-  list-style: none;
-  padding: 20px;
-}
-.navbar-links ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-weight: bold; */
-  color: orange;
-  text-decoration: none;
-  font-size: 25px; 
-} 
-
-
-      
-
-        
-      h1 {
-        font-size: 30px;
-        color: orange;
-      }
-
-
-
-      /* h2 {
-          color: orange;
-          font-size: 20px;
-      }  
-      h5 {
-          color: #007A5C;
-          font-size: 16px;
-          line-height: 1.5;
-      } */
-
-      
-      p {
-        color: #007A5C;
-        font-size: 22px;
-        line-height: 1;
-      }
-
-
- 
-
-
-
-
-        .card-gray {
-          background-color: #fff;
-          /* border: 1px solid #007A5C; */
-          /* border-radius: 5px;  */
-          padding: 10px;
-        }
-        .title-gray {
-          color: #007A5C;
-          font-size: 20px;
-          line-height: 1;
-          /* padding: 10px; */
-        }
-        .title-description-gray {
-          color: #007A5C;
-          font-size: 18px;
-          line-height: 1;
-          /* padding: 10px; */
-        }
-        .stats-gray {
-          color: #007A5C;
-          font-size: 15px;
-          line-height: 1;
-        }
-
-        .card-green {
-          background-color: #007A5C;
-          /* border: 1px solid #007A5C; */
-          /* border-radius: 5px;  */
-          padding: 10px;
-        }
-
-        .title-green {
-          color: #fff;
-          font-size: 20px;
-          line-height: 1;
-          /* padding: 10px; */
-        }
-
-        .title-description-greem {
-          color: #fff;
-          font-size: 18px;
-          line-height: 1;
-          /* padding: 10px; */
-        }
-
-        .stats-green {
-          color: #000;
-          font-size: 15px;
-          line-height: 1;
-        }   
-      
-      }
-
-    /* clear floats after the columns */
-    /* .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    .website-name {
-      margin-top: 100px;
-    }
-    .website-name a {
-      text-decoration: none;
-      text-align: center;
-    }
-    .website-name a h1 {
-      font-size: 40px;
-    }
-    .website-name a h1 p {
-      font-size: 18px;
-      text-align: left;
-      margin-left: 50px;
-    }
-    .website-slogan {
-      font-size: 18px;
-      text-align: left;
-      margin-left: 50px;
-    }
-    
-    
