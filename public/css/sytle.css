@@ -85,13 +85,13 @@ body{
       letter-spacing:1.5px;
   }
   h2{ 
-      /* text-align: left; */
+      text-align: left;
       font-size: 30px;
       font-weight: bold;
       text-transform: capitalize;
       letter-spacing: 1.5px;
       color: orange;
-      margin-top: 100px;
+      margin-top: 70px;
   }
   h3{
       color: orange;
