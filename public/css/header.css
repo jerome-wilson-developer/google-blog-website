@@ -24,6 +24,7 @@
   text-align: center;
   font-style: normal;
   padding: 30px;
+  border: 7px double #292929;
 }
 .navbar-links {
   width: 100%;
