@@ -2,48 +2,43 @@
     box-sizing: border-box;
 }
 
-.top-header {
-  margin: 0px;
+.top-header {  
+  font-family: Arial, Helvetica, sans-serif; 
   padding: 0px; 
-  margin: 20px auto; 
-  padding: 20px;
+  margin: 0px auto; 
+  max-width: 100%;
 }
 .website-name {
+  border: 1px solid #292929;
   padding: 0px;
   margin: 0px;
 }
-.website-name h1 {   
-  font-family: Arial, Helvetica, sans-serif;
+.website-name h1 { 
   color: orange;
   text-align: center;
   font-weight: bolder;
 }
 .website-name p { 
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: #292929;
-  padding: 30px;
   text-align: center;
   font-style: normal;
+  padding: 30px;
 }
 .navbar-links {
-  width: 100%; 
-  margin-top: -50px;
-  margin-bottom: 20px;
+  width: 100%;
 }
 .navbar-links ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 50px;
 }
 .navbar-links ul li {
   list-style: none;
   padding: 20px;
 }
 .navbar-links ul li a {
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   color: orange;

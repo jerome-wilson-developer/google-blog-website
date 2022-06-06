@@ -8,34 +8,19 @@
   box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
   }  
-  .main-container {
-    
+  .main-container {    
     display: grid;
-    width: 100%;
+    max-width: fit-content;
+    grid-gap: 10px;    
+    margin: 0 auto;    
+    /* grid-template-rows: max-content; */
     /* grid-template-columns: 100%; */
-    /* grid-template-rows: 33vh; */
-    grid-gap: 10px;
-    /* grid-template-areas:
-    "top top"
-    "burromLeft bottomRight"; */
-    margin: auto;
-    /* border: 5px solid #00ff00; */
-    /* justsify-content: center; */
-
-    /* margin: 0 auto;
-    padding: 0px;
-    display: grid;
-    max-width: 100%; 
-    grid-gap: 30px;
-    
-    grid-template-rows: max-content; */
   }
-
 /* the hero image container */
   .hero-container {
     margin: 0px;
@@ -45,8 +30,7 @@ body{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .hero-container img {
-    
+  .hero-container img {    
     max-width: 100%;
     padding: 10px;
   }
@@ -79,7 +63,6 @@ body{
     left: 35px;
   }
   .hero-container .bottom-left {
-    /* font-family: Arial, Helvetica, sans-serif; */
     color: #fff;
     font-weight: 100;
     font-size: 24px;
@@ -92,28 +75,24 @@ body{
     right: 35px;
   }
   .hero-container .bottom-right {
-    /* font-family: Arial, Helvetica, sans-serif; */
     color: #fff;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.7;
     padding: 15px;
   }
-
 /* all styling tags */
   h1{
-      letter-spacing:2.5px;
+      letter-spacing:1.5px;
   }
   h2{ 
-      text-align: left;
+      /* text-align: left; */
       font-size: 30px;
       font-weight: bold;
       text-transform: capitalize;
       letter-spacing: 1.5px;
       color: orange;
-
       margin-top: 100px;
-      /* padding-left: 50px; */
   }
   h3{
       color: orange;
@@ -122,8 +101,8 @@ body{
       font-style:italic;
       font-weight:100;
       letter-spacing:2.5px;
-      margin-top:-30px;
-      margin-left: 30px;
+      /* margin-top:-30px; */
+      /* margin-left: 30px; */
   }
   h4 {
     color: #292929;
@@ -145,7 +124,6 @@ body{
   a {
     margin: 0px;
     padding: 0px;
-
     /* width: 400; */
     /* height: 200; */
   }
@@ -157,61 +135,32 @@ body{
     width: 35%; 
     padding: 15px; 
     font-size: 1.2rem; 
-    /* margin-top: 25px; */
-    text-decoration: underline; 
-
-    /* margin-left: 50px; */
-    /* text-align: center; */
-    /* margin-bottom: 500px; */
-    /* border: 2px solid tan; */
+    text-decoration: underline;
   }
   button a {
     color: #fff;
   }
-
   /* img {
     background-image: url("/public/images/work-from-home-7.png");
     background-size: contain;
     background-size: stretch;
     background-repeat: no-repeat;
   }   */
-
-
-  /* EXPERIMENT ROW */
-  /* row 1 styling */  
-
-  /* .row1-with-3columns {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-
-    border: 2px solid black;
-  } */
-
-
-
-
   /* row 1 styling */  
   .image-row1-with-3columns {
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch; 
     justify-content: space-evenly;
-    /* margin-bottom: 220px; */
-
-    /* margin-left: 0px; */
-
-    /* margin-bottom: 20px; */
   }
-
-  .image-row1-with-3columns .image-box #one a img {
-    /* width:"400"; */
-    /* height:"200";  */
+  .image-row1-with-3columns .image-box a img {
+    width:"400px";
+    height:"200"; 
   }
-  
+  img {
+    width: fit-content;
+  }  
 /*   
   .image-box #one {
     background-image: url("/public/images/work-from-home-7.png");
@@ -219,7 +168,6 @@ body{
     background-size: stretch;
     background-repeat: no-repeat;
   }   */
-
   .text-box{
     width:400px;
     /* height:70px; */
@@ -236,8 +184,6 @@ body{
   #thr{
     order:3;
   }
-
-
   .header-button-row1-with-3columns {
     display:flex;
     flex-direction: row;
@@ -245,11 +191,9 @@ body{
     align-items: center; 
     justify-content:space-around;
   }
-
   .image-box{
     width:400px;
     height:200px;
-
   }
   .text-box{
     width:400px;
@@ -268,8 +212,6 @@ body{
   #thr{
     order:3;
   }
-
-
   /* row 2 styling */
   .image-row2-with-2columns {
     display:flex;
@@ -302,7 +244,6 @@ body{
   #section2 #thr{
     order:3;
   }
-
   .header-button-row2-with-2columns {
     display:flex;
     flex-direction: row;
@@ -334,34 +275,86 @@ body{
   #section2 #thr{
     order:3;
   }
- 
-
 /* row 3 reviews and testimonials */
   .review-header-row3-with-3columns {
-    width: 100%;
+    /* max-width: fit-content; */
+
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    /* flex-wrap: wrap; */
+
     align-items: center; 
-    justify-content:space-around;
-    /* margin-top: 50px; */
-    
+    justify-content:space-evenly;
+    border: 1px solid black;
   }
   .review-header-row3-with-3columns h2 {
     color: #007A5C;
     font-size: 52px;
     font-weight: 400;
-    text-align: right;
+    text-align: center;
+  }
+  .review-header-row3-with-3columns .text-box {
+    margin-bottom: 100px;
+    max-width: fit-content;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content:space-evenly;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    margin-top: 50px;
   }
   .review-header-row3-with-3columns p {
     font-size:24px;
-    letter-spacing:3px;
-    /* width:100%; */
+    width:100%;
     background-color:#007A5C;
     color: #fff;
-    /* text-align: left; */
-    padding: 20px;
+    padding: 50px;
+
+    border: 1px solid black;
+    border-radius: 20px;
 }
-.review-header-row3-with-3columns .text-box {
-  margin-bottom: 100px;
+
+
+/* SMARTPHONE SCREEN */
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: #fff;
+    border: 3px solid orange;
+    border-radius: 10px;
+  }  
+  .hero-container .centered button {
+    display: none; 
+  } 
+  .hero-container .bottom-left {
+    display: none; 
+  }
+  .hero-container .bottom-right {
+    display: none; 
+  }
+
+}
+
+
+/* TABLET SCREEN */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  body {
+    background-color: #000;
+    border: 3px solid #007A5C;
+  } 
+  .hero-container .centered button {
+    display: none; 
+  } 
+  .hero-container .bottom-left {
+    display: none; 
+  }
+  .hero-container .bottom-right {
+    display: none; 
+  }
+
 }

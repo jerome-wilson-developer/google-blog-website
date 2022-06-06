@@ -102,7 +102,7 @@ figure figcaption {
 @media only screen and (max-width: 800px) {
   body {
   border: 3px solid orange;
-  border-radius: 11px;
+  border-radius: 10px;
     font-weight: 100;
     padding: 10px;
     line-height: 1;
@@ -172,7 +172,7 @@ figure figcaption {
 
 
 /* TABLET SCREEN */
-@media only screen and (min-width: 801px) and (max-width: 1050px) {
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
   body {
     font-weight: 100;
     padding: 10px;

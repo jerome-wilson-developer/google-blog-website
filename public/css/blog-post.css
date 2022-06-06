@@ -177,6 +177,8 @@ footer a {
 @media only screen and (max-width: 800px) {
     body {
       background-color: #fff;
+      border: 3px solid orange;
+      border-radius: 10px;
     }
     footer {
       display: none;
@@ -279,7 +281,7 @@ footer a {
 
 
 /* TABLET SCREEN */
-@media only screen and (min-width: 801px) and (max-width: 1150px) {
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
   body {
     background-color: #000;
     border: 3px solid #007A5C;
