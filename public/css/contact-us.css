@@ -34,6 +34,7 @@ h1 {
   color: orange;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  line-height: 2;
 }
 h2 { 
   margin: 0px;
@@ -92,7 +93,7 @@ figure figcaption {
 }
 
 /* SMARTPHONE SCREEN */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   body {
   border: 3px solid orange;
   border-radius: 10px;
@@ -128,7 +129,7 @@ figure figcaption {
     margin: 0px;
     padding: 0px;
     padding: 60px 20px 20px 20px;
-    font-size:40px;
+    font-size:30px;
     color: #292929;
     line-height:1; 
   }
@@ -136,14 +137,14 @@ figure figcaption {
     margin: 0px;
     padding: 0px;
     padding: 20px 20px 20px 20px;
-    font-size: 40px; 
+    font-size: 30px; 
     color: #292929; 
     line-height:1; 
   }
   p {
     line-height:1.2; 
     color:orange; 
-    font-size: 35px;
+    font-size: 22px;
     padding: 20px;
     text-align: center;
   }
@@ -164,7 +165,7 @@ figure figcaption {
 }
 
 /* TABLET SCREEN */
-@media only screen and (min-width: 801px) and (max-width: 1200px) {
+@media only screen and (min-width: 701px) and (max-width: 950px) {
   body {
     font-weight: 100;
     padding: 10px;

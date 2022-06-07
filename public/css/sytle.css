@@ -288,11 +288,9 @@ body{
 }
 
 /* SMARTPHONE SCREEN */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   body {
     background-color: #fff;
-    border: 3px solid orange;
-    border-radius: 10px;
   }  
   .hero-container .centered button {
     display: none; 
@@ -304,7 +302,10 @@ body{
     display: none; 
   }
   .main-container {
-    padding: 10px;
+    border: 3px solid orange;
+    border-radius: 10px;
+    margin: 10px;
+    /* padding: 10px; */
   }
   h2 {
     text-align: start;
@@ -321,8 +322,8 @@ body{
 }
 
 /* TABLET SCREEN */
-@media only screen and (min-width: 801px) 
-and (max-width: 1200px) {
+@media only screen and (min-width: 701px) 
+and (max-width: 950px) {
   body {
     background-color: #000;
     border: 3px solid #007A5C;
