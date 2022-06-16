@@ -288,7 +288,7 @@ body{
 }
 
 /* SMARTPHONE SCREEN */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   body {
     background-color: #fff;
   }  
@@ -302,8 +302,6 @@ body{
     display: none; 
   }
   .main-container {
-    /* border: 3px solid orange; */
-    /* border-radius: 10px; */
     margin: 10px;
     /* padding: 10px; */
   }
@@ -322,11 +320,10 @@ body{
 }
 
 /* TABLET SCREEN */
-@media only screen and (min-width: 701px) 
-and (max-width: 950px) {
+@media only screen and (min-width: 768px) 
+and (max-width: 1000px) {
   body {
     background-color: #000;
-    border: 3px solid #007A5C;
   } 
   .hero-container .centered button {
     display: none; 
